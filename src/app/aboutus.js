@@ -108,18 +108,18 @@ export default function Aboutus() {
           <Image src={brand} alt="Shop By Brand" />
         </div>
         <p className="text-black flex justify-center items-center p-9">
-          <span className="w-[40%]">
+          <span className="lg:w-[40%]">
             We have a responsibility to inform you about how we produce your
             Ghee, and it is your right to be aware of our process.
           </span>
         </p>
 
-        <div className="flex flex-wrap justify-center">
+        <div className="flex flex-wrap justify-center ">
           {cardsData.map((card, index) => (
             <>
               <div
                 key={index}
-                className={`max-w-sm rounded overflow-hidden shadow-lg mx-2 bg-[${cardsData[index].color}]`}
+                className="max-w-sm rounded overflow-hidden sm:mb-[10px] shadow-lg mx-2"
                 style={{ backgroundColor: `${card.color}` }}
               >
                 <Image
